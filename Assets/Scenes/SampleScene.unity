@@ -288,6 +288,55 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1256329801
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1256329802}
+  - component: {fileID: 1256329803}
+  m_Layer: 0
+  m_Name: Laser Controller
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1256329802
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1256329801}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1417022977}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1256329803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1256329801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e52fcf0d0850e54d9195fd4be1e9d78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 2555975443133719374, guid: a9f9c7b320fe2e949bc08d0b0a4cb655, type: 3}
+  damage: 0
+  speed: 10
+  cooldownDuration: 2
+  pierce: 0
 --- !u!1 &1417022973
 GameObject:
   m_ObjectHideFlags: 0
@@ -443,10 +492,11 @@ Transform:
   m_GameObject: {fileID: 1417022973}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1256329802}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1417022978
@@ -546,6 +596,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3038921818562094094, guid: bb374f0b6d302d043ab8a64a49bb4fec, type: 3}
+      propertyPath: propPrefabs.Array.size
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 3038921818562094094, guid: bb374f0b6d302d043ab8a64a49bb4fec, type: 3}
+      propertyPath: propPrefabs.Array.data[10]
+      value: 
+      objectReference: {fileID: 7471182127045382128, guid: fbed12236bc6f404aa15dca68abdd4e4, type: 3}
+    - target: {fileID: 3038921818562094094, guid: bb374f0b6d302d043ab8a64a49bb4fec, type: 3}
+      propertyPath: propPrefabs.Array.data[11]
+      value: 
+      objectReference: {fileID: 5495772312538374374, guid: 6829abbaf23ce9048a3a37a9555d6551, type: 3}
+    - target: {fileID: 3038921818562094094, guid: bb374f0b6d302d043ab8a64a49bb4fec, type: 3}
+      propertyPath: propPrefabs.Array.data[12]
+      value: 
+      objectReference: {fileID: 6205414747067811744, guid: 78348a29aec95ac4292d4ca6b5dd18d7, type: 3}
+    - target: {fileID: 3038921818562094094, guid: bb374f0b6d302d043ab8a64a49bb4fec, type: 3}
+      propertyPath: propPrefabs.Array.data[13]
+      value: 
+      objectReference: {fileID: 4852254658066986741, guid: d63e15c7d5fb5de4a8057ecb23f924d5, type: 3}
     - target: {fileID: 5476530310169938056, guid: bb374f0b6d302d043ab8a64a49bb4fec, type: 3}
       propertyPath: m_Name
       value: Terrain Chunk
