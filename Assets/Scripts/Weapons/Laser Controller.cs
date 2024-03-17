@@ -14,6 +14,6 @@ public class LaserController : WeaponController
         base.Attack();
         GameObject spawnedLaser = Instantiate(prefab);
         spawnedLaser.transform.position = transform.position; //Assign the position to be this object which is parented to the player 
-        spawnedLaser.GetComponent<LaserBehavior>().DirectionChecker(pm.moveDir);
+        spawnedLaser.GetComponent<LaserBehavior>().DirectionChecker(pm.lastMovedVector);
     }
 }
