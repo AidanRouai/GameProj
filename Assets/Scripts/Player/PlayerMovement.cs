@@ -22,6 +22,7 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         rb = GetComponent<Rigidbody2D>();
         lastMovedVector = new Vector2(1, 0f); //To initialize so that when we start up the game and don't move, the projectile will have momentum 
     }

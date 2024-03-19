@@ -15,6 +15,7 @@ public class PlayerAnimation : MonoBehaviour
         am = GetComponent<Animator>();
         pm = GetComponent<PlayerMovement>();
         sr = GetComponent<SpriteRenderer>();
+        
     }
 
     void Update()
@@ -30,14 +31,14 @@ public class PlayerAnimation : MonoBehaviour
         }
 
         void SpriteDirectionChecker()
-        {
+        {            
             if (pm.lastHorizontalVector < 0)
             {
-                sr.flipX = true;
+                sr.flipX = true;               
             }
             else
             {
-                sr.flipX = false;
+                sr.flipX = false;                
             }
         }
     }

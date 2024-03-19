@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Enemymovement : MonoBehaviour
 {
+    public EnemyScriptableObject enemyData;
     Transform player;
-    public float moveSpeed;
     SpriteRenderer sr; 
 
     void Start()
@@ -17,7 +17,7 @@ public class Enemymovement : MonoBehaviour
 
     void Update()
     {
-        transform.position = Vector2.MoveTowards(transform.position, player.transform.position, moveSpeed * Time.deltaTime); //Moves the enemy towards the player
+        transform.position = Vector2.MoveTowards(transform.position, player.transform.position, enemyData.MoveSpeed * Time.deltaTime); //Moves the enemy towards the player
         
         if (transform.position.x < player.transform.position.x) //If the player is to the right of the sprite
         {
