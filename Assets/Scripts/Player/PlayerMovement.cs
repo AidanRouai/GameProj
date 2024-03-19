@@ -1,12 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.U2D.Animation;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
 
     //Movement
-    public float movespeed;
     [HideInInspector]
     public Vector2 moveDir;
     [HideInInspector]
@@ -17,7 +17,9 @@ public class PlayerMovement : MonoBehaviour
     public Vector2 lastMovedVector; 
 
 
+
     Rigidbody2D rb;
+    public CharacterScriptableObject characterData;  
 
     // Start is called before the first frame update
     void Start()
@@ -64,6 +66,6 @@ public class PlayerMovement : MonoBehaviour
 
     void Move()
     {
-        rb.velocity = new Vector2(moveDir.x * movespeed, moveDir.y* movespeed);
+        rb.velocity = new Vector2(moveDir.x * characterData.MoveSpeed, moveDir.y* characterData.MoveSpeed);
     }
 }

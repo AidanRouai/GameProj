@@ -34,3 +34,5 @@ public class EnemyStats : MonoBehaviour
         Destroy(gameObject);
     }
 }
+
+//Source: https://www.youtube.com/watch?v=qREiQ5vSAng

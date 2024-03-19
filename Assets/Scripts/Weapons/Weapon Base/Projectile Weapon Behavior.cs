@@ -88,6 +88,7 @@ public class ProjectileWeaponBehaviour : MonoBehaviour
         {
             EnemyStats enemy = col.GetComponent<EnemyStats>();
             enemy.TakeDamage(currentDamage);
+            ReducePierce();
         }
     }
     void ReducePierce() //Destroy once pierce hits 0
