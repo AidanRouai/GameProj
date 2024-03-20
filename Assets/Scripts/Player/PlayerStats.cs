@@ -7,14 +7,12 @@ public class PlayerStats : MonoBehaviour
 
     public CharacterScriptableObject characterData;
 
-
     //Initialize current stats
     float currentHealth;
     float currentRecovery;
     float currentMoveSpeed;
     float currentStrength;
     float currentProjectileSpeed;
-
 
     //Experience and level of player
     [Header("Experience/Level")]
@@ -31,6 +29,12 @@ public class PlayerStats : MonoBehaviour
         public int experienceCapIncrease;
     }
 
+
+    [Header("Invincibility frames/I frames")]
+    public float invincibilityDuration;
+    float invincibilityTimer;
+    bool isInvincible;
+
     public List<LevelRange> levelRanges;
 
     private void Awake()
@@ -45,6 +49,19 @@ public class PlayerStats : MonoBehaviour
     public void Start()
     {
         experienceLevelCap = levelRanges[0].experienceCapIncrease;
+    }
+
+    private void Update()
+    {
+        if (invincibilityTimer > 0)
+        {
+            invincibilityTimer -= Time.deltaTime;
+        }
+
+        else if (isInvincible)
+        {
+            isInvincible = false;
+        }
     }
 
     public void IncreaseExperience(int amount)
@@ -71,5 +88,42 @@ public class PlayerStats : MonoBehaviour
                 }
             }
         }
+    }
+
+    public void TakeDamage(float dmg)
+    {
+        if (!isInvincible) //If player not in I frame, take damage
+        {
+            currentHealth -= dmg;
+
+            invincibilityTimer = invincibilityDuration;
+            isInvincible = true;
+
+            if (currentHealth <= 0)
+            {
+                Kill();
+            }
+        }  
+
+        
+    }
+
+    public void Kill()
+    {
+        Debug.Log("YOU ARE DEAD");
+    }
+
+    public void RestoreHealth(float amount)
+    {
+    if ( currentHealth < characterData.MaxHealth) //Heal if player is not at max health 
+        {
+            currentHealth += amount;
+
+            if (currentHealth > characterData.MaxHealth) //Make sure to not exceed max health 
+            {
+                currentHealth = characterData.MaxHealth;
+            }
+        }
+  
     }
 }

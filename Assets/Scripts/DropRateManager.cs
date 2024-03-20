@@ -18,13 +18,25 @@ public class DropRateManager : MonoBehaviour
 
     void OnDestroy()
     {
+        if (!gameObject.scene.isLoaded)
+        {
+            return;
+        }
+
         float randomNumber = UnityEngine.Random.Range(0f, 100f); //Percentage chance that the item will drop
+        List<Drops> possibleDrops = new List<Drops>();
 
         foreach (Drops rate in drops)
         {
             if (randomNumber <= rate.dropRate)
             {
-                Instantiate(rate.itemPrefab, transform.position, Quaternion.identity);
+               possibleDrops.Add(rate);
+            }
+
+            if (possibleDrops.Count > 0) //See if drops are possible
+            {
+                Drops drops = possibleDrops[UnityEngine.Random.Range(0, possibleDrops.Count)];
+                Instantiate(drops.itemPrefab, transform.position, Quaternion.identity);
             }
         }
     }

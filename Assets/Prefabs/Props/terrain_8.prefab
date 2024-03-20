@@ -11,9 +11,11 @@ GameObject:
   - component: {fileID: 773076509406214876}
   - component: {fileID: 4343816309916542180}
   - component: {fileID: 5631104677500099620}
+  - component: {fileID: 3681988348703124435}
+  - component: {fileID: 1337815553972139281}
   m_Layer: 0
   m_Name: terrain_8
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -130,3 +132,32 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &3681988348703124435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7733269157953658833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fd946b88594c83498ac40232d093b56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 10
+--- !u!114 &1337815553972139281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7733269157953658833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43e4b31b3ed1507439fb288f9f62b731, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  drops:
+  - name: HealthPack
+    itemPrefab: {fileID: 1769018453609438280, guid: 8b2ee387c9feb484c8dc8e83b470f591, type: 3}
+    dropRate: 50

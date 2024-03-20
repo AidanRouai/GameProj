@@ -248,6 +248,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyData: {fileID: 11400000, guid: 4cf64a969dc66194c95d483e9d036b6d, type: 2}
+--- !u!114 &685586107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 685586097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43e4b31b3ed1507439fb288f9f62b731, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  drops:
+  - name: 'Xp gem '
+    itemPrefab: {fileID: 2191118999390158007, guid: c9576d7bbe3c3d94c89ae11695202e57, type: 3}
+    dropRate: 100
 --- !u!1 &725779335 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9148842973387825696, guid: af9d6b455ba2ac6488ec736bc0e85a6a, type: 3}
@@ -311,6 +327,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyData: {fileID: 11400000, guid: 4cf64a969dc66194c95d483e9d036b6d, type: 2}
+--- !u!114 &725779345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 725779335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43e4b31b3ed1507439fb288f9f62b731, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  drops:
+  - name: 'xp gem '
+    itemPrefab: {fileID: 2191118999390158007, guid: c9576d7bbe3c3d94c89ae11695202e57, type: 3}
+    dropRate: 75
 --- !u!1 &931894529
 GameObject:
   m_ObjectHideFlags: 0
@@ -430,6 +462,7 @@ GameObject:
   - component: {fileID: 1417022978}
   - component: {fileID: 1417022980}
   - component: {fileID: 1417022981}
+  - component: {fileID: 1417022982}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -643,6 +676,7 @@ MonoBehaviour:
   experience: 0
   level: 1
   experienceLevelCap: 0
+  invincibilityDuration: 0.5
   levelRanges:
   - startLevel: 1
     endLevel: 3
@@ -653,6 +687,18 @@ MonoBehaviour:
   - startLevel: 5
     endLevel: 7
     experienceCapIncrease: 300
+--- !u!114 &1417022982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1417022973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15b9942f6482dcc47b5f9dd595ff0e96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1282383876347374174
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -713,6 +759,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4176566451957052739, guid: a6ffc815accfaa142b7eb45837f552da, type: 3}
       insertIndex: -1
       addedObject: {fileID: 685586101}
+    - targetCorrespondingSourceObject: {fileID: 4176566451957052739, guid: a6ffc815accfaa142b7eb45837f552da, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 685586107}
   m_SourcePrefab: {fileID: 100100000, guid: a6ffc815accfaa142b7eb45837f552da, type: 3}
 --- !u!1001 &2420116657778449572
 PrefabInstance:
@@ -777,6 +826,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 9148842973387825696, guid: af9d6b455ba2ac6488ec736bc0e85a6a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 725779339}
+    - targetCorrespondingSourceObject: {fileID: 9148842973387825696, guid: af9d6b455ba2ac6488ec736bc0e85a6a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 725779345}
   m_SourcePrefab: {fileID: 100100000, guid: af9d6b455ba2ac6488ec736bc0e85a6a, type: 3}
 --- !u!1001 &8167731556648508569
 PrefabInstance:
