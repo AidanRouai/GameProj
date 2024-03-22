@@ -13,6 +13,6 @@ public class LaserBehavior : ProjectileWeaponBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position += direction * weaponData.Speed * Time.deltaTime; //Set the movement of the laser  
+        transform.position += direction * currentSpeed * Time.deltaTime; //Set the movement of the laser  
     }
 }

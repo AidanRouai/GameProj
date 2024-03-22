@@ -47,11 +47,9 @@ public class ProjectileWeaponBehaviour : MonoBehaviour
         if (dirx < 0 && diry ==0) //left
         {
             scale.x = scale.x * -1; 
-            scale.y = scale.y * -1; 
         }
         else if (dirx == 0 && diry < 0) //down
-        {
-            scale.y = scale.y * -1;
+        {           
             rotation.z = -90f;
         }
         else if (dirx == 0 && diry > 0) //up
@@ -68,14 +66,11 @@ public class ProjectileWeaponBehaviour : MonoBehaviour
         }
         else if (dirx < 0 && diry > 0) //left up
         {
-            rotation.z = -45f;
-            scale.x = scale.x * -1;
+            rotation.z = 135;
         }
         else if (dirx < 0 && diry < 0) //left down
         {
-            scale.x = scale.x * -1;
-            scale.y = scale.y * -1;
-            rotation.z = 45f;
+            rotation.z = 225f;
         }
         transform.localScale = scale;
         transform.rotation = Quaternion.Euler(rotation);
