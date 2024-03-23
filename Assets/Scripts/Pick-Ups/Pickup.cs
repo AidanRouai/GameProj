@@ -6,7 +6,7 @@ public class Pickup : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.CompareTag("Player")) //If it getrs to close to player, destroy it.
+        if (col.CompareTag("Player")) //If it gets to close to player, destroy it.
         {
             Destroy(gameObject);
         }
