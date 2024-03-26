@@ -31,7 +31,11 @@ public class EnemySpawner : MonoBehaviour
     public int enemiesAlive;
     public int maxEnemiesAllowed; //Max number of enemies allowed on the map 
     public bool maxEnemiesReached = false; //Indicates if the maximum amount of enemies on the map has been reached 
-    public float waveInterval; 
+    public float waveInterval;
+
+
+    [Header("Spawn Positions")]
+    public List<Transform> relativeSpawnPoints; //List to store all the enemy spawn points in regard of the player 
 
     Transform player;
 
@@ -98,25 +102,33 @@ public class EnemySpawner : MonoBehaviour
                         return; 
                     }
 
+                    
+
+                    Instantiate(enemyGroup.enemyPrefabs, player.position + relativeSpawnPoints[Random.Range(0, relativeSpawnPoints.Count)].position, Quaternion.identity); //Spawn the enemy at a random position
+
                     Vector2 spawnPosition = new Vector2(player.transform.position.x + Random.Range(-10f, 10f), player.transform.position.y + Random.Range(-10f, 10f));
                     Instantiate(enemyGroup.enemyPrefabs, spawnPosition, Quaternion.identity);
 
                     enemyGroup.spawnCount++;
                     waves[currentWaveCount].spawnCount++;
-                    enemiesAlive++; 
+                    enemiesAlive++;
+
+                    
                 }
             }
         }
-
-        if(enemiesAlive < maxEnemiesAllowed)
+        if (enemiesAlive < maxEnemiesAllowed)
         {
-            maxEnemiesReached = false; 
+            maxEnemiesReached = false;
+            return;
         }
+
     }
 
     public void OnEnemyKilled()
     {
         enemiesAlive--;
+        maxEnemiesReached = false;
     }
 }
 
