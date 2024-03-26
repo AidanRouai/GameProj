@@ -45,6 +45,12 @@ public class EnemyStats : MonoBehaviour
             player.TakeDamage(currentDamage); //using current damage to make sure it accounts for any damage changes 
         }
     }
+
+    private void OnDestroy()
+    {
+        EnemySpawner es = FindObjectOfType<EnemySpawner>();
+        es.OnEnemyKilled();
+    }
 }
 
 //Source: https://www.youtube.com/watch?v=qREiQ5vSAng

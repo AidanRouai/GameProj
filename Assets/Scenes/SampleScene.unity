@@ -242,7 +242,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 685586097}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 15f0263e4b0f58c44b519b99625f0ec4, type: 3}
   m_Name: 
@@ -386,18 +386,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waves:
-  - waveName: 
+  - waveName: Wave1
+    enemyGroups:
+    - enemyName: flying bot
+      enemyCount: 5
+      spawnCount: 0
+      enemyPrefabs: {fileID: 725779335}
     waveQuota: 0
-    spawnInterval: 0
+    spawnInterval: 1
     spawnCount: 0
-  - waveName: 
-    waveQuota: 0
-    spawnInterval: 0
-    spawnCount: 0
-  - waveName: 
-    waveQuota: 0
-    spawnInterval: 0
-    spawnCount: 0
+  currentWaveCount: 0
+  enemiesAlive: 0
+  maxEnemiesAllowed: 4
+  maxEnemiesReached: 0
+  waveInterval: 3
 --- !u!1 &868138293
 GameObject:
   m_ObjectHideFlags: 0
@@ -443,7 +445,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15b9942f6482dcc47b5f9dd595ff0e96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pullSpeed: 300
+  pullSpeed: 200
 --- !u!58 &868138296
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1063,6 +1065,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: wheel bot
       objectReference: {fileID: 0}
+    - target: {fileID: 4176566451957052739, guid: a6ffc815accfaa142b7eb45837f552da, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: -3439309298496654105, guid: a6ffc815accfaa142b7eb45837f552da, type: 3}
     m_RemovedGameObjects: []
@@ -1183,6 +1189,10 @@ PrefabInstance:
     - target: {fileID: 9148842973387825696, guid: af9d6b455ba2ac6488ec736bc0e85a6a, type: 3}
       propertyPath: m_Name
       value: Flying bot
+      objectReference: {fileID: 0}
+    - target: {fileID: 9148842973387825696, guid: af9d6b455ba2ac6488ec736bc0e85a6a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8578268370316035576, guid: af9d6b455ba2ac6488ec736bc0e85a6a, type: 3}
