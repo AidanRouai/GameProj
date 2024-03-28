@@ -28,7 +28,7 @@ public class CharacterScriptableObject : ScriptableObject
     [SerializeField]
     float strength;
 
-    public float Strength { get => maxHealth; private set => maxHealth = value; }
+    public float Strength { get => strength; private set => strength = value; }
 
     [SerializeField]
     float projectileSpeed;

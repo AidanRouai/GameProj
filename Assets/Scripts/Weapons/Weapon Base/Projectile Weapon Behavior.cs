@@ -32,6 +32,11 @@ public class ProjectileWeaponBehaviour : MonoBehaviour
         return currentDamage *= FindObjectOfType<PlayerStats>().currentStrength;
     }
 
+    public float GetCurrentProjectileSpeed()
+    {
+        return currentSpeed *= FindObjectOfType<PlayerStats>().currentProjectileSpeed;
+    }
+
     protected virtual void Start()
     {
         Destroy(gameObject, destroyAfterSeconds);

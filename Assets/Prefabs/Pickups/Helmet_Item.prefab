@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6662262271714672436}
   - component: {fileID: 2010549293334479551}
+  - component: {fileID: 3692477002920196178}
   m_Layer: 0
   m_Name: Helmet_Item
   m_TagString: Prop
@@ -84,3 +85,16 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &3692477002920196178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3142176373750308459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ff45b6c9dc14a44497f4d447ed8f96c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  passiveItemData: {fileID: 11400000, guid: 5f7706a122836a14a95a9aea4d42154b, type: 2}

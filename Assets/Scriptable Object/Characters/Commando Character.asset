@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae6a2fe60b5cb5149ac61d51d34833de, type: 3}
   m_Name: Commando Character
   m_EditorClassIdentifier: 
-  startingWeapon: {fileID: 0}
-  maxHealth: 1000
+  startingWeapon: {fileID: 7383371541676880940, guid: f3d9901294cf91f4ba44eb32873ebb3f, type: 3}
+  maxHealth: 500
   recovery: 1
   moveSpeed: 5
-  strength: 0
-  projectileSpeed: 0
+  strength: 1
+  projectileSpeed: 1
   magnet: 4

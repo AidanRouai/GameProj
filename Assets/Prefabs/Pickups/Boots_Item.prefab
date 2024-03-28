@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 288730348756609528}
   - component: {fileID: 170781345536664122}
+  - component: {fileID: 8213499167225299724}
   m_Layer: 0
   m_Name: Boots_Item
   m_TagString: Untagged
@@ -84,3 +85,16 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &8213499167225299724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8340699319308005802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb2dbe61c88dac345850f10236b2cda6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  passiveItemData: {fileID: 11400000, guid: 313c8152bf1bccd408eeb00aef161e8c, type: 2}

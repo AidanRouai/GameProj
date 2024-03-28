@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class LaserBehavior : ProjectileWeaponBehaviour
 {
-
     protected override void Start()
     {
         base.Start();

@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abc8ebe557a99064e8791a1b4f48e2f1, type: 3}
   m_Name: Boots Passive Item
   m_EditorClassIdentifier: 
-  multiplier: 50
+  multiplier: 25
