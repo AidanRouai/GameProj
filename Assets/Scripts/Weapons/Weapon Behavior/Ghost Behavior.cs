@@ -19,16 +19,20 @@ public class GhostBehavior : ProjectileWeaponBehaviour
         // Get the screen bounds in world coordinates
         Vector3 screenBounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
 
-        // Get the projectile's position
-        Vector3 position = transform.position;
+        // Clamp the projectile's position to stay within the screen bounds
+        transform.position = new Vector3(
+            Mathf.Clamp(transform.position.x, -screenBounds.x, screenBounds.x),
+            Mathf.Clamp(transform.position.y, -screenBounds.y, screenBounds.y),
+            transform.position.z
+        );
 
-        // Check if the projectile hits the screen edges
-        if (position.x > screenBounds.x || position.x < -screenBounds.x)
+        // Check if the projectile hits the screen edges and reverse direction if necessary
+        if (Mathf.Abs(transform.position.x) >= screenBounds.x)
         {
             // Reverse X direction
             direction.x *= -1;
         }
-        if (position.y > screenBounds.y || position.y < -screenBounds.y)
+        if (Mathf.Abs(transform.position.y) >= screenBounds.y)
         {
             // Reverse Y direction
             direction.y *= -1;

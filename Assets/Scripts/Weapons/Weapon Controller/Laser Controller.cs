@@ -5,13 +5,12 @@ using UnityEngine;
 
 public class LaserController : WeaponController
 {
-    SpriteRenderer playerSpriteRenderer;
+    SpriteRenderer sr;
 
     protected override void Start()
     {
         base.Start();
-        // Find the player's sprite renderer
-        playerSpriteRenderer = GetComponentInParent<SpriteRenderer>();
+        sr = GetComponentInParent<SpriteRenderer>();
     }
 
     protected override void Attack()
@@ -20,7 +19,7 @@ public class LaserController : WeaponController
         GameObject spawnedLaser = Instantiate(weaponData.Prefab);
 
         // Check if the player sprite is flipped
-        float xOffset = playerSpriteRenderer.flipX ? -1 : 1 ;
+        float xOffset = sr.flipX ? -1 : 1 ;
 
         if (xOffset < 0)
         {

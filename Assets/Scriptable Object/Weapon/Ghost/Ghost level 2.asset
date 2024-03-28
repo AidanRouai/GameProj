@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21049658cee99c94f8ef6e67f1c9ead4, type: 3}
+  m_Name: Ghost level 2
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 3824248515028813413, guid: 188e791274e5f7e44b689de5bc6c4bad, type: 3}
+  damage: 5
+  speed: 10
+  cooldownDuration: 5
+  pierce: 5
+  level: 2
+  nextLevelPrefab: {fileID: 0}

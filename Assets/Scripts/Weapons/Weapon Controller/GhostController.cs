@@ -9,7 +9,6 @@ public class GhostController : WeaponController
     protected override void Start()
     {
         base.Start();
-        // Find the player's sprite renderer
         sr = GetComponentInParent<SpriteRenderer>();
     }
 
@@ -18,7 +17,6 @@ public class GhostController : WeaponController
         base.Attack();
         GameObject spawnedGhost = Instantiate(weaponData.Prefab);
 
-        // Check if the player sprite is flipped
         float xOffset = sr.flipX ? -1 : 1;
 
         if (xOffset < 0)

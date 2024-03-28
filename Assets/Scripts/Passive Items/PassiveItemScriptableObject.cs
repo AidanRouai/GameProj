@@ -11,16 +11,11 @@ public class PassiveItemScriptableObject : ScriptableObject
     float multiplier;
 
     public float Multiplier { get => multiplier; private set => multiplier = value; }
+    [SerializeField]
+    int level;
+    public int Level { get => level; private set => level = value; }
 
-
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    [SerializeField]
+    GameObject nextLevelPrefab; //what the object becomes when it levels up 
+    public GameObject NextLevelPrefab { get => nextLevelPrefab; private set => nextLevelPrefab = value; }
 }
