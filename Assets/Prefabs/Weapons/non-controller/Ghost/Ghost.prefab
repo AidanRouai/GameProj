@@ -191,4 +191,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponData: {fileID: 11400000, guid: e5f78bbbedff6ab4e9ea7ed2e9d2f418, type: 2}
-  destroyAfterSeconds: 10
+  destroyAfterSeconds: 6

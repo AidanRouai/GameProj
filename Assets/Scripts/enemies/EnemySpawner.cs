@@ -104,7 +104,8 @@ public class EnemySpawner : MonoBehaviour
 
                     
 
-                    Instantiate(enemyGroup.enemyPrefabs, player.position + relativeSpawnPoints[Random.Range(0, relativeSpawnPoints.Count)].position, Quaternion.identity); //Spawn the enemy at a random position
+                    Instantiate(enemyGroup.enemyPrefabs, player.position + relativeSpawnPoints[Random.Range(0, relativeSpawnPoints.Count)].position, Quaternion.identity); 
+                    //Spawn the enemy at a random position
 
                     Vector2 spawnPosition = new Vector2(player.transform.position.x + Random.Range(-10f, 10f), player.transform.position.y + Random.Range(-10f, 10f));
                     Instantiate(enemyGroup.enemyPrefabs, spawnPosition, Quaternion.identity);

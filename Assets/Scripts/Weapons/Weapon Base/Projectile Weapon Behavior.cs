@@ -29,12 +29,12 @@ public class ProjectileWeaponBehaviour : MonoBehaviour
 
     public float GetCurrentDamage()
     {
-        return currentDamage *= FindObjectOfType<PlayerStats>().currentStrength;
+        return currentDamage *= FindObjectOfType<PlayerStats>().CurrentStrength;
     }
 
     public float GetCurrentProjectileSpeed()
     {
-        return currentSpeed *= FindObjectOfType<PlayerStats>().currentProjectileSpeed;
+        return currentSpeed *= FindObjectOfType<PlayerStats>().CurrentProjectileSpeed;
     }
 
     protected virtual void Start()

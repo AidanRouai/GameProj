@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 2568556092858554690}
   - component: {fileID: -3439309298496654105}
   - component: {fileID: 5108638819905110067}
+  - component: {fileID: 741834346098473112}
+  - component: {fileID: -4255837312390341648}
   m_Layer: 0
   m_Name: wheel bot
   m_TagString: Enemy
@@ -166,7 +168,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15f0263e4b0f58c44b519b99625f0ec4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyData: {fileID: 11400000, guid: 4cf64a969dc66194c95d483e9d036b6d, type: 2}
 --- !u!114 &5108638819905110067
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -180,3 +181,68 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyData: {fileID: 11400000, guid: 4cf64a969dc66194c95d483e9d036b6d, type: 2}
+  currentMoveSpeed: 0
+  currentHealth: 0
+  currentDamage: 0
+  despawnDistance: 20
+--- !u!61 &741834346098473112
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4176566451957052739}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.75, y: 0.71875}
+    newSize: {x: 0.75, y: 0.71875}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.75, y: 0.71875}
+  m_EdgeRadius: 0
+--- !u!114 &-4255837312390341648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4176566451957052739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43e4b31b3ed1507439fb288f9f62b731, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  drops:
+  - name: Xp gem
+    itemPrefab: {fileID: 2191118999390158007, guid: c9576d7bbe3c3d94c89ae11695202e57, type: 3}
+    dropRate: 100

@@ -6,6 +6,6 @@ public class ChestplatePassiveItem : PassiveItem
 {
     protected override void ApplyModifier()
     {
-        player.currentRecovery *= 1 + passiveItemData.Multiplier / 100f;
+        player.CurrentRecovery *= 1 + passiveItemData.Multiplier / 100f;
     }
 }
