@@ -208,7 +208,7 @@ public class PlayerStats : MonoBehaviour
 
     void LevelUpChecker()
     {
-     if (experience >= experienceLevelCap)
+        if (experience >= experienceLevelCap)
         {
             level++;
             experience -= experienceLevelCap;
@@ -222,6 +222,9 @@ public class PlayerStats : MonoBehaviour
                     break;
                 }
             }
+            experienceLevelCap += experienceCapIncrease;
+
+            GameManager.instance.StartLevelUp();
         }
     }
 
