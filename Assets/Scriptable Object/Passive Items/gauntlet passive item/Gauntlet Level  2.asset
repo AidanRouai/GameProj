@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   multiplier: 50
   level: 2
-  nextLevelPrefab: {fileID: 0}
+  nextLevelPrefab: {fileID: 982961679306190766, guid: d5d1e4b0e435fc34480a86822b72a378, type: 3}
   name: Gauntlet lvl 2
-  description: Increased projectile speed
+  description: Increases magnet by 25%
   icon: {fileID: 21300000, guid: 4a930c6f0ee46bf46968251348d038e4, type: 3}

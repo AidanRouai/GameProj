@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21049658cee99c94f8ef6e67f1c9ead4, type: 3}
   m_Name: Laser Level 3
   m_EditorClassIdentifier: 
-  prefab: {fileID: 7383371541676880940, guid: f3d9901294cf91f4ba44eb32873ebb3f, type: 3}
+  prefab: {fileID: 7383371541676880940, guid: f331649ec3fc73043970bf0dcce26f86, type: 3}
   damage: 5
   speed: 17
   cooldownDuration: 0.25
   pierce: 2
   level: 3
-  nextLevelPrefab: {fileID: 0}
+  nextLevelPrefab: {fileID: 7383371541676880940, guid: 7e2508463c8dd184ab2fdfd3dc9059fd, type: 3}
   name: Laser Lvl 3
   description: 'Increased fire rate '
   icon: {fileID: 21300000, guid: 467c3e536850b2145b79706661e9b73f, type: 3}

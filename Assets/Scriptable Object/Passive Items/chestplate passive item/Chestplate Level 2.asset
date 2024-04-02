@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   multiplier: 75
   level: 2
-  nextLevelPrefab: {fileID: 0}
-  name: Armor Lvl 2
-  description: Increased recovery
+  nextLevelPrefab: {fileID: 1130170516742793189, guid: 9896938522f2d9148b946d2d1c1f13d5, type: 3}
+  name: Armor Level 2
+  description: Increased recovery by 25%
   icon: {fileID: -2125149975, guid: 2f97fe5da69538d4a86d4c17a17a2869, type: 3}

@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21049658cee99c94f8ef6e67f1c9ead4, type: 3}
   m_Name: Ghost Level 3
   m_EditorClassIdentifier: 
-  prefab: {fileID: 3824248515028813413, guid: 188e791274e5f7e44b689de5bc6c4bad, type: 3}
+  prefab: {fileID: 3824248515028813413, guid: db2013d3935d3bb44a4050c8b35571e1, type: 3}
   damage: 5
   speed: 12
   cooldownDuration: 3
   pierce: 5
   level: 3
-  nextLevelPrefab: {fileID: 0}
-  name: Ghost lvl 3
+  nextLevelPrefab: {fileID: 3376008022755132496, guid: caf7ac8aafe634a4caf7306bd2b8afdb, type: 3}
+  name: Ghost Level 3
   description: Increased speed and penetration
   icon: {fileID: 528520559, guid: 2f97fe5da69538d4a86d4c17a17a2869, type: 3}

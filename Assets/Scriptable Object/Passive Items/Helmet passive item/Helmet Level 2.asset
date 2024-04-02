@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   multiplier: 75
   level: 2
-  nextLevelPrefab: {fileID: 0}
+  nextLevelPrefab: {fileID: 3142176373750308459, guid: f9efc2e63c98cf84dadd28621e9bdc13, type: 3}
   name: Helmet Lvl 2
-  description: Increased damage
+  description: Increased damage by 25%
   icon: {fileID: 21300000, guid: cf0715c4c15dae94694aeb963d2a7c10, type: 3}

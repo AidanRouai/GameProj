@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: abc8ebe557a99064e8791a1b4f48e2f1, type: 3}
-  m_Name: Gauntlet Passive Item
+  m_Name: Boots Level 3
   m_EditorClassIdentifier: 
-  multiplier: 25
-  level: 1
-  nextLevelPrefab: {fileID: 982961679306190766, guid: 7ca84b80c111531488e1ec788c0c88b0, type: 3}
-  name: Gauntlet
-  description: Increased projectile speed
-  icon: {fileID: 21300000, guid: 4a930c6f0ee46bf46968251348d038e4, type: 3}
+  multiplier: 75
+  level: 3
+  nextLevelPrefab: {fileID: 8340699319308005802, guid: 884175f2a4d094c4592e0514c2779101, type: 3}
+  name: Boots Level
+  description: Increases move speed by 25%
+  icon: {fileID: 21300000, guid: ea725dc6cb8ef724aa97dcfc38f525f6, type: 3}

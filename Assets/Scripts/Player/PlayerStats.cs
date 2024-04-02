@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerStats : MonoBehaviour
 {
@@ -147,6 +148,11 @@ public class PlayerStats : MonoBehaviour
     public int weaponIndex;
     public int passiveItemIndex;
 
+    [Header("UI")]
+    public Image healthBar;
+    public Image XPbar;
+    public Text levelText;
+
     public GameObject firstPassiveItemTest, secondPassiveItemTest, thirdPassiveItemTest, fourthPassiveItemTest;
     public GameObject secondWeaponTest;
     public GameObject laserWeapon; 
@@ -165,9 +171,9 @@ public class PlayerStats : MonoBehaviour
         SpawnWeapon(laserWeapon);
 
        // SpawnPassiveItem(firstPassiveItemTest);
-        SpawnPassiveItem(secondPassiveItemTest);
-        SpawnPassiveItem(thirdPassiveItemTest);
-        SpawnPassiveItem(fourthPassiveItemTest);
+        //SpawnPassiveItem(secondPassiveItemTest);
+        //SpawnPassiveItem(thirdPassiveItemTest);
+        //SpawnPassiveItem(fourthPassiveItemTest);
        // SpawnWeapon(secondWeaponTest);
     }
 
@@ -182,6 +188,9 @@ public class PlayerStats : MonoBehaviour
         GameManager.instance.currentProjectileSpeedDisplay.text = "Projectile Speed:" + currentProjectileSpeed;
         GameManager.instance.currentMagnetDisplay.text = "Magnet:" + currentMagnet;
 
+        UpdateHealthBar();
+        UpdateXPbar();
+        UpdateLevelText();
     }
 
     private void Update()
@@ -197,6 +206,7 @@ public class PlayerStats : MonoBehaviour
         }
 
         Recover();
+        UpdateHealthBar();
     }
 
     public void IncreaseExperience(int amount)
@@ -204,6 +214,7 @@ public class PlayerStats : MonoBehaviour
         experience += amount;
 
         LevelUpChecker();
+        UpdateXPbar();
     }
 
     void LevelUpChecker()
@@ -225,7 +236,19 @@ public class PlayerStats : MonoBehaviour
             experienceLevelCap += experienceCapIncrease;
 
             GameManager.instance.StartLevelUp();
+
+            UpdateLevelText();
         }
+    }
+
+    void UpdateXPbar()
+    {
+        XPbar.fillAmount = (float)experience / experienceLevelCap; //Update xp bar fill amount
+    }
+
+    void UpdateLevelText()
+    {
+        levelText.text = "Lvl" + level.ToString();
     }
 
     public void TakeDamage(float dmg)
@@ -241,9 +264,17 @@ public class PlayerStats : MonoBehaviour
             {
                 Kill();
             }
+            UpdateHealthBar();
         }  
 
         
+    }
+
+    void UpdateHealthBar()
+    {
+        //Change the fill of the health bar
+
+        healthBar.fillAmount = currentHealth / characterData.MaxHealth;
     }
 
     public void Kill()
@@ -267,12 +298,8 @@ public class PlayerStats : MonoBehaviour
                 CurrentHealth = characterData.MaxHealth;
             }
         }
+        UpdateHealthBar();
   
-    }
-
-    public void IncreaseProjectileSpeed(float amount)
-    {
-        CurrentProjectileSpeed *= amount;
     }
 
     void Recover()
@@ -286,6 +313,7 @@ public class PlayerStats : MonoBehaviour
                 CurrentHealth = characterData.MaxHealth; //Player's health won't exceed MaxHealth 
             }
         }
+        UpdateHealthBar();
     }
 
     public void SpawnWeapon(GameObject weapon)
@@ -319,4 +347,5 @@ public class PlayerStats : MonoBehaviour
         passiveItemIndex++; //So that the next passiveItem is added to the next weapon slot 
 
     }
+
 }

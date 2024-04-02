@@ -6,6 +6,6 @@ public class GauntletPassiveItem : PassiveItem
 {
     protected override void ApplyModifier()
     {
-        player.CurrentProjectileSpeed *= 1 + passiveItemData.Multiplier / 100f;
+        player.CurrentMagnet *= 1 + passiveItemData.Multiplier / 100f;
     }
 }

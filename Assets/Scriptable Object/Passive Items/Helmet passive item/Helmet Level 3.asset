@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: abc8ebe557a99064e8791a1b4f48e2f1, type: 3}
-  m_Name: Gauntlet Passive Item lvl 2
+  m_Name: Helmet Level 3
   m_EditorClassIdentifier: 
-  multiplier: 50
-  level: 2
-  nextLevelPrefab: {fileID: 0}
-  name: Gauntlet lvl 2
-  description: Increased projectile speed
-  icon: {fileID: 21300000, guid: 4a930c6f0ee46bf46968251348d038e4, type: 3}
+  multiplier: 100
+  level: 3
+  nextLevelPrefab: {fileID: 3142176373750308459, guid: 30ffe4d1ded7b3643a1fe6a6b0ac9827, type: 3}
+  name: Helmet Level 3
+  description: Increased damage by 25%
+  icon: {fileID: 21300000, guid: cf0715c4c15dae94694aeb963d2a7c10, type: 3}
