@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: abc8ebe557a99064e8791a1b4f48e2f1, type: 3}
-  m_Name: Chestplate Passive Item
+  m_Name: Gauntlet Level  2
   m_EditorClassIdentifier: 
   multiplier: 50
-  level: 1
-  nextLevelPrefab: {fileID: 1130170516742793189, guid: 2b11a2ea573849a4ab5a29c5dca564b5, type: 3}
-  name: Armor
-  description: Increased recovery
-  icon: {fileID: -2125149975, guid: 2f97fe5da69538d4a86d4c17a17a2869, type: 3}
+  level: 2
+  nextLevelPrefab: {fileID: 0}
+  name: Gauntlet lvl 2
+  description: Increased projectile speed
+  icon: {fileID: 21300000, guid: 4a930c6f0ee46bf46968251348d038e4, type: 3}

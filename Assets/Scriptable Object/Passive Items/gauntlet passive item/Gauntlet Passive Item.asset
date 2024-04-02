@@ -15,4 +15,6 @@ MonoBehaviour:
   multiplier: 25
   level: 1
   nextLevelPrefab: {fileID: 982961679306190766, guid: 7ca84b80c111531488e1ec788c0c88b0, type: 3}
+  name: Gauntlet
+  description: Increased projectile speed
   icon: {fileID: 21300000, guid: 4a930c6f0ee46bf46968251348d038e4, type: 3}

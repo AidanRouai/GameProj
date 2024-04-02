@@ -164,11 +164,11 @@ public class PlayerStats : MonoBehaviour
 
         SpawnWeapon(laserWeapon);
 
-        SpawnPassiveItem(firstPassiveItemTest);
+       // SpawnPassiveItem(firstPassiveItemTest);
         SpawnPassiveItem(secondPassiveItemTest);
         SpawnPassiveItem(thirdPassiveItemTest);
         SpawnPassiveItem(fourthPassiveItemTest);
-        SpawnWeapon(secondWeaponTest);
+       // SpawnWeapon(secondWeaponTest);
     }
 
     public void Start()

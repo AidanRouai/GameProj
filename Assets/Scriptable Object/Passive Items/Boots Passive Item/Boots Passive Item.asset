@@ -15,4 +15,6 @@ MonoBehaviour:
   multiplier: 25
   level: 1
   nextLevelPrefab: {fileID: 8340699319308005802, guid: f154e7894b2424a43bc0902ebf2849e8, type: 3}
+  name: Boots
+  description: Increases move speed
   icon: {fileID: 21300000, guid: ea725dc6cb8ef724aa97dcfc38f525f6, type: 3}

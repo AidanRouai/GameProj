@@ -30,7 +30,6 @@ public class InventoryManager : MonoBehaviour
     [System.Serializable]
     public class UpgradeUI
     {
-        public Text upgradeUIDisplay;
         public Text upgradeNameDisplay;
         public Text upgradeDescriptionDisplay;
         public Image upgradeIcon;
@@ -146,7 +145,7 @@ public class InventoryManager : MonoBehaviour
                     {
                         upgradeOption.upgradeButton.onClick.AddListener(() => player.SpawnWeapon(chosenWeaponUpgrade.initialWeapon));
                         upgradeOption.upgradeDescriptionDisplay.text = chosenWeaponUpgrade.weaponData.Description;
-                        upgradeOption.upgradeNameDisplay.text = chosenWeaponUpgrade.weaponData.name;
+                        upgradeOption.upgradeNameDisplay.text = chosenWeaponUpgrade.weaponData.Name;
                     }
 
                     upgradeOption.upgradeIcon.sprite = chosenWeaponUpgrade.weaponData.Icon;
@@ -180,7 +179,7 @@ public class InventoryManager : MonoBehaviour
                     {
                         upgradeOption.upgradeButton.onClick.AddListener(() => player.SpawnPassiveItem(chosenPassiveItemUpgrade.initialPassiveItem));
                         upgradeOption.upgradeDescriptionDisplay.text = chosenPassiveItemUpgrade.PassiveItemData.Description;
-                        upgradeOption.upgradeNameDisplay.text = chosenPassiveItemUpgrade.PassiveItemData.name;
+                        upgradeOption.upgradeNameDisplay.text = chosenPassiveItemUpgrade.PassiveItemData.Name;
                     }
                     upgradeOption.upgradeIcon.sprite = chosenPassiveItemUpgrade.PassiveItemData.Icon;
 
@@ -203,3 +202,5 @@ public class InventoryManager : MonoBehaviour
         ApplyUpgradeOptions();
     }
 }
+
+//source:https://www.youtube.com/watch?v=HtZYoZ900y8

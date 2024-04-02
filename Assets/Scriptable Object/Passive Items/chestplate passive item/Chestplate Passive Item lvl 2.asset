@@ -15,4 +15,6 @@ MonoBehaviour:
   multiplier: 75
   level: 2
   nextLevelPrefab: {fileID: 0}
+  name: Armor Lvl 2
+  description: Increased recovery
   icon: {fileID: -2125149975, guid: 2f97fe5da69538d4a86d4c17a17a2869, type: 3}

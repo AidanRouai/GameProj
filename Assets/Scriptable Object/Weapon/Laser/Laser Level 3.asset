@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 21049658cee99c94f8ef6e67f1c9ead4, type: 3}
-  m_Name: Laser Weapon level 2
+  m_Name: Laser Level 3
   m_EditorClassIdentifier: 
   prefab: {fileID: 7383371541676880940, guid: f3d9901294cf91f4ba44eb32873ebb3f, type: 3}
   damage: 5
-  speed: 15
-  cooldownDuration: 0.5
-  pierce: 1
-  level: 2
-  nextLevelPrefab: {fileID: 8368082519548681029, guid: fbe40fb4024ce614bb247b4791a912c5, type: 3}
-  name: Laser Lvl 2
-  description: Increased fire rate
+  speed: 17
+  cooldownDuration: 0.25
+  pierce: 2
+  level: 3
+  nextLevelPrefab: {fileID: 0}
+  name: Laser Lvl 3
+  description: 'Increased fire rate '
   icon: {fileID: 21300000, guid: 467c3e536850b2145b79706661e9b73f, type: 3}

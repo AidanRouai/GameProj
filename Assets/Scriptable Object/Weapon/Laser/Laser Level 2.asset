@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 21049658cee99c94f8ef6e67f1c9ead4, type: 3}
-  m_Name: Laser Weapon level 2
+  m_Name: Laser Level 2
   m_EditorClassIdentifier: 
   prefab: {fileID: 7383371541676880940, guid: f3d9901294cf91f4ba44eb32873ebb3f, type: 3}
   damage: 5
