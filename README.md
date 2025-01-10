@@ -1,1 +1,1 @@
-# COMP222
+Vampire Survivors Clone game
