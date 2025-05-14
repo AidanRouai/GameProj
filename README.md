@@ -24,7 +24,7 @@ This game is a student project that recreates core mechanics from the popular ga
 
 1. Clone the repository
 ```bash
-git clone [your-repository-url]
+git clone github.com/AidanRouai/GameProj
 ```
 2. Open the project in Unity Hub
 3. Build project 
