@@ -35,6 +35,10 @@ git clone github.com/AidanRouai/GameProj
 - ESC - Pause game
 - Space - Select upgrades (when leveling up)
 
+## Preview
+
+https://github.com/user-attachments/assets/e25e8a78-3c58-47bd-83f3-255ebf595a6f
+
 ## Credits
 
 - Certain Assets created by 3D artist Zach Hasan 
